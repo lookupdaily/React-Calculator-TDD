@@ -8,11 +8,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Installation instructions
 
 1. Clone this repository
-2. Run `brew install yarn`
+2. You can run using yarn or node. To set this up run either `brew install yarn` or `brew install node`
 
-In the project directory, you can run:
-
-### `yarn start`
+In the project directory, you can run: `yarn start` or `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -23,6 +21,13 @@ You will also see any lint errors in the console.
 ## Testing
 
 Testing is in Jest with Enzyme.
+
+To run tests:
+
+`brew install watchman`
+`npm test`
+
+
 
 ## Requirements
 
