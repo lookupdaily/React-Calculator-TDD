@@ -1,9 +1,10 @@
 import React from 'react';
+import Display from '../Display/Display';
 import './Calculator.css';
 
 class Calculator extends React.Component {
   state = {
-    displayValue: 0,
+    displayValue: '0',
     numbers: [],
     operators: [],
     selectedOperator: '',
@@ -23,8 +24,11 @@ class Calculator extends React.Component {
   }
 
   render = () => {
+    const { displayValue } = this.state
     return (
-      <div className="calculator-container" />
+      <div className="calculator-container">
+        <Display displayValue={displayValue} />
+      </div>
     );
   }
 }
