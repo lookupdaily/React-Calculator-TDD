@@ -24,9 +24,11 @@ Testing is in Jest with Enzyme.
 
 To run tests:
 
-`brew install watchman`
-`npm test`
-
+```shell
+brew install node
+brew install watchman
+npm test
+```
 
 
 ## Requirements
