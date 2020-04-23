@@ -81,8 +81,8 @@ describe('updateDisplay', () => {
   });
 
   it('removes leading "0" from displayValue', () => {
-    wrapper.instance().updateDisplay(0),
-    expect(wwrapper.state('displayValue')).toEqual('0');
+    wrapper.instance().updateDisplay('0'),
+    expect(wrapper.state('displayValue')).toEqual('0');
     wrapper.instance().updateDisplay('5');
     expect(wrapper.state('displayValue')).toEqual('5');
   });
