@@ -16,8 +16,17 @@ class Calculator extends React.Component {
     console.log('call operation');
   }
 
-  setOperator = () => {
-    console.log('set operation');
+  setOperator = value => {
+    let { displayValue, selectedOperator, storedValue} = this.state;
+
+    if(selectedOperator === '') {
+      storedValue = displayValue;
+      displayValue = '0';
+    } 
+
+    selectedOperator = value;
+
+    this.setState({ displayValue, selectedOperator, storedValue });
   }
 
   updateDisplay = value => {
