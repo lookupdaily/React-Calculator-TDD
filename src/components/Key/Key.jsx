@@ -7,7 +7,7 @@ const Key = ({
   keyType,
   keyValue
 }) => (
-  <div className="key-container">
+  <div className="key-container ${keyType}">
     <p className="key-value">
       {keyValue}
     </p>
