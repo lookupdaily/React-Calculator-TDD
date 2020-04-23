@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Key from 'key';
+import Key from './Key';
 
 describe('Key', () => {
   let wrapper;

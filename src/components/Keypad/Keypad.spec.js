@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Keypad from './Keypad';
-import Key from '../Key';
+import Key from '../Key/Key';
 
 describe('Keypad', () => {
   let wrapper;
@@ -33,6 +33,6 @@ describe('Keypad', () => {
   })
 
   it('should render an instance of the Key component', () => {
-    expect(wrapper.find('Key').length).Equal(1);
+    expect(wrapper.find('Key').length).toEqual(1);
   });
 });
