@@ -46,11 +46,11 @@ npm test
 ## App design
 
 ### Methods
-|Input       |Method       |Output                   |Behaviour                                              |
-|------------|-------------|-------------------------|-------------------------------------------------------|
-|Number key  |updateDisplay|new display value        |Updates and renders the display value to the DOM       |
-|Operator key|setOperator  |store operator to state  |Saves the chosen operator to the component state object|
-|Submit key  |callOperator |output value of operation| Handles maths                                         |
+|Function name    |Input       |Behaviour  |
+|------------|-------------|-----------|
+|updateDisplay|Number key  |Updates and renders the display value to the DOM|
+|setOperator  |Operator key|Saves the chosen operator to the component state object|
+|callOperator |Submit key  |Handles maths   |
 
 ### Attributes
 |Variable name|Type|Purpose|
