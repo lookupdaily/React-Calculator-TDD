@@ -13,7 +13,35 @@ class Calculator extends React.Component {
   }
 
   callOperator = () => {
-    console.log('call operation');
+    let { displayValue, selectedOperator, storedValue} = this.state;
+
+    const updateStoredValue = displayValue;
+
+    displayValue = parseInt(displayValue, 10);
+    storedValue = parseInt(storedValue, 10);
+
+    switch(selectedOperator) {
+      case '+': 
+        displayValue = storedValue + displayValue;
+        break;
+      case '-':
+        displayValue = storedValue - displayValue;
+        break;
+      case '*':
+        displayValue = storedValue * displayValue;
+        break;
+      case '/':
+        displayValue = storedValue / displayValue;
+        break;
+      default: 
+        displayValue = '0';
+    }
+
+    displayValue = displayValue.toString();
+    selectedOperator = '';
+    if (displayValue === 'NaN' || displayValue === 'Infinity') displayValue = '0'
+
+    this.setState({ displayValue, selectedOperator, storedValue: updateStoredValue});
   }
 
   setOperator = value => {
